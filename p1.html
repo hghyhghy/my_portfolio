@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #000021;
+
+        color: white;
+
+        font-family: 'Poppins', sans-serif;
+      }
+
+      nav {
+        display: flex;
+
+        justify-content: space-around;
+
+        align-items: center;
+
+        height: 80px;
+
+        background-color: rgb(20, 2, 60);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin: 0 23px;
+
+        list-style: none;
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+
+      .fs {
+        display: flex;
+
+        justify-content: space-around;
+        margin: 80px 0;
+      }
+      /* //to select first div we use > */
+      .fs > div {
+        width: 30%;
+      }
+
+      .leftsec {
+        /* background-color: red; */
+
+        font-size: 2.5rem;
+        font-weight: lighter;
+
+        margin: 70px 0;
+      }
+
+      .rightsec img {
+        /* background-color: red; */
+
+        width: 80%;
+      }
+
+      nav img {
+        border-top-left-radius: 134%;
+        border-top-right-radius: 134%;
+        border-bottom-right-radius: 134%;
+        border-bottom-left-radius: 134%;
+
+        width: -1px;
+
+        height: 64%;
+
+        margin-right: 43%;
+      }
+
+      .purple {
+        color: blueviolet;
+      }
+
+      body{
+
+        height: 600px;
+      }
+
+      .d {
+        color: yellow;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: lawngreen;
+
+        font-size: 1.04rem;
+      }
+
+      #element
+      {
+        color: lawngreen;
+      }
+
+      .vertical
+      {
+        height: 99px;
+
+        width: 1px;
+
+        background-color: white ;
+
+        margin: 0 105px;
+      }
+
+      .textgray
+      {
+        color: gray;
+
+        margin-left: 40%;
+      }
+
+      .imgtop
+      {
+         width: 23px; 
+         position: relative; 
+         top: -32px;
+
+         left: -9px;
+
+
+      }
+
+      .s1
+      {
+           max-width: 80vw;
+           margin: auto; 
+           height: 90vh;
+      }
+      .box
+      {
+ background: white;
+
+ width: 79vw;
+ height: 7px; 
+
+ margin: 20px 0;
+
+ margin-left: 150px ;
+
+ display: flex;
+
+ margin-bottom:64%;
+      }
+
+      .s1 h1{
+        font-size: 1.9rem;
+
+        margin-left: 40%;
+
+        margin-top: 0%;
+        margin-bottom: 5%;
+
+        top: 1%;
+
+        color: red;
+      }  
+
+      main hr{
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 60px 84px;
+
+        margin-left: 22px;
+        width: 84%;
+      }
+
+
+      .verticaltitle
+      {
+          position: relative; 
+
+          top: 55px;
+
+          width: 150px;
+
+          margin-left: -5%;
+      }
+
+      .verticaldesc
+      {
+        position: relative;
+        top: 156px;
+        color: gray;
+        font-size: 0.9rem;
+
+        margin-left: -8%;
+
+
+      }
+
+      .ver{
+
+         position: relative;
+
+         color: gray;
+        font-size: 0.9rem;
+
+        margin-left: -8%;
+
+        margin-top: 35px;
+
+        margin-bottom: 10%;
+
+      }
+
+      .ver1
+      {
+        margin-top: 0%;
+
+        top: -4%;
+      }
+
+      .footer
+      {
+        background-color: #0e0e1a;
+
+        /* display: flex; */
+
+        height: 233px;
+
+
+
+        /* margin:23px 122p; */
+
+
+      }
+
+      .footer{
+        display: flex;
+
+        padding: 21px 129px;
+
+        justify-content: space-evenly;
+        text-decoration: none;
+
+        list-style: none;
+      } 
+
+      .footer ul{
+        list-style: none;
+      }
+
+      .footer h3
+      {
+        color: white;
+
+        margin-top: 4%;
+
+        text-align: center;
+
+        justify-content: center;
+
+        /* margin-left: 34%; */
+      }
+
+      /* .f1 h3
+      {
+
+        display: flex;
+margin-left: 23%;
+
+padding: 8%;
+      } */
+
+      .footer > div
+      {
+        width: 223px;
+
+        justify-content: space-around;
+      }
+
+      footer .text
+      {
+        text-align: center;
+        color: darkblue;
+
+        background-color: yellow;
+
+
+      }
+
+      .button {
+  margin-top: 34px;
+}
+
+      .button button {
+
+        position: absolute;
+
+        top: 76%;
+
+        margin-left: 60%;
+  background-color: blueviolet;
+
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+    sans-serif;
+  padding: 9px;
+  border-top-left-radius: 56px;
+  border-top-right-radius: 56px;
+
+  border-bottom-left-radius: 56px;
+
+  border-bottom-right-radius: 56px;
+
+  box-shadow: 0 0 5px 5px white;
+
+  cursor: pointer;
+}
+
+
+
+.button1 button {
+
+        position: absolute;
+
+        top: 76%;
+
+        margin-left: 75%;
+  background-color: blueviolet;
+
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+    sans-serif;
+  padding: 9px;
+  border-top-left-radius: 56px;
+  border-top-right-radius: 56px;
+
+  border-bottom-left-radius: 56px;
+
+  border-bottom-right-radius: 56px;
+
+  box-shadow: 0 0 5px 5px white;
+
+  cursor: pointer;
+
+
+
+
+
+
+
+      
+    </style>
+  </head>
+  <div>
+    <header>
+      <nav>
+        <div class="left">Subhams Portfolio</div>
+
+        <img src="w1.jpg" alt="" />
+
+        <div class="right">
+          <ul>
+            <li><a href=" #">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#"> Services</a></li>
+            <li><a href="#"> Projects</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="fs">
+        <div class="leftsec">
+          Hi my name is <span class="purple">Subham</span>
+          <div>
+            And i am a Passionate
+
+              <span id="element"></span>
+          
+          </div>
+        </div>
+        <div class="rightsec">
+          <img src="4.png" alt="" />
+        </div>
+      </section>
+      <hr>
+
+      <section class="s1">
+        <span class="textgray">
+          What I have done so far
+        </span>
+        <h1>
+          Work Experience
+        </h1>
+
+        <div class="box">
+          <div class="vertical">
+            
+            <img class="imgtop" src="y.png" alt="">
+            <div class="ver1">
+              HTML Developer (2018-present)  
+            </div>
+
+            <div class="ver">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatum 
+            </div>
+            
+          </div>
+          
+            
+          <div class="vertical">
+            
+            <img class="imgtop" style="background-color: white;" src="git.png" alt="">
+            SQL (2020-2022)
+          </div>
+          
+           <div class="verticaldesc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatum 
+            </div>
+            
+
+          <div class="vertical">
+            
+            <img class="imgtop" style="font-size: 2rem;" src="inst.png" alt="">
+
+            JAVA (2022-present)
+            
+          </div>
+           <div class="verticaldesc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatum 
+            </div>
+            
+            <div class="vertical">
+              
+            <img class="imgtop" src="twit.png" alt="">
+
+            c++ (2018-2021)
+            
+          </div>
+           <div class="verticaldesc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatum 
+            </div>
+
+            <div class="vertical">
+              
+            <img class="imgtop" src="6.png" alt="">
+
+            css (2022-present)
+            
+          </div>
+           <div class="verticaldesc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatum 
+            </div>
+            
+            
+        </div>
+      </section>
+
+      <div class="button">
+              <a href="cv.txt" target="_blank"><button>Download CV</button></a>
+            </div>
+
+            <div class="button1">
+
+            
+              <a href="contact.html" target="_blank"><button>Contact Me</button></a>
+            </div>
+            </div>
+
+
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="f1">
+          <h3>
+            Developed By Subham
+          </h3>
+        </div>
+        <div class="f2">
+          <ul>
+            <li class="home">Home</li>
+            <li class="home">About</li>
+            <li class="home">Services</li>
+            <li class="home">Projects</li>
+            <!-- <li class="home">home</li> -->
+          </ul>
+        </div>
+        <div class="f3">
+          <ul>
+            <li class="home">Home</li>
+            <li class="home">About</li>
+            <li class="home">Services</li>
+            <li class="home">Projects</li>
+            <!-- <li class="home">home</li> -->
+          </ul>
+        </div>
+        <div class="f4">
+          <ul>
+            <li class="home">Home</li>
+            <li class="home">About</li>
+            <li class="home">Services</li>
+            <li class="home">Projects</li>
+            <!-- <li class="home">home</li> -->
+          </ul> 
+        </div>
+
+       
+      </div>
+
+       <div class="text">
+         Copyright &#169; www.subhamportfolio.com |All Rights Reserved
+        </div>
+
+
+    </footer>
+
+  </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['A Web Developer', 'A Programmer','  A Musician'],
+      typeSpeed: 50, 
+    });
+  </script>
+  </body>
+</htm>
